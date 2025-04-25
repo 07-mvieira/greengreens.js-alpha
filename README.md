@@ -3,7 +3,7 @@
 # ⭐greengreens.js🌳
 remake do primeiro nível do jogo Kirby's Dream Land em JavaScript
 
-### ❗ sumário
+### 🧾 sumário
 - [sobre o jogo]
 - [tecnologias utilizadas]
 - [como jogar]
