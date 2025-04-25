@@ -16,7 +16,7 @@ remake do primeiro nível do jogo Kirby's Dream Land em JavaScript
 
 ## 💫 sobre o jogo
 
-greengreens.js é um remake de Green Greens, nível 1 do jogo de plataforma Kirby's Dream Land para o Game Boy, escolhido como primeiro projeto de jogo em JavaScript por me permitir agregar conhecimentos novos e assustadores por meio de um jogo com qual eu sou familiar, além de ser um jogo aparentemente simples e fácil de replicar, ou seria, com o conhecimento adequado disante de mim.
+greengreens.js é um remake de Green Greens, nível 1 do jogo de plataforma Kirby's Dream Land para o Game Boy, escolhido como primeiro projeto de jogo em JavaScript por me permitir agregar conhecimentos novos e assustadores por meio de um jogo com qual eu sou familiar, além de ser um jogo aparentemente simples e fácil de replicar, ou pelo menos eu achei que seria.
 
 o jogador controla Kirby em um espaço bidimensional por diferentes telas rolantes da fase, que inicia em uma planície até o jogador adentrar-se em um bosque, evitando e atacando inimigos no caminho até encontrar e derrotar o chefe. além de simplesmente caminhar e pular, Kirby pode sugar ar, que ele pode usar para inalar inimigos e objetos, podendo os engolir ou cuspir como projéteis, ou se inflar para voar, podendo assoprar vento como um projétil, cancelando assim o voo. ele também pode se agachar para evitar certos ataques.
 
