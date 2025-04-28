@@ -5,9 +5,11 @@
 }
 
 #canvas{
+    background-color: rgb(255, 255, 255);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 91.25vh;
-    width: 111vh;
+    height: 527.41px; /*was 88.89vh*/
+    width: 658.89px; /*was 111vh*/
+    z-index: 0;
 }
