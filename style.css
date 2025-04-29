@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+#app-div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 527.41px; /*was 88.89vh*/
+    width: 658.89px; /*was 111vh*/
+}
+
 #canvas{
     background-color: rgb(255, 255, 255);
     display: block;
@@ -12,4 +20,8 @@
     height: 527.41px; /*was 88.89vh*/
     width: 658.89px; /*was 111vh*/
     z-index: 0;
+}
+
+#game-info{
+    color: white;
 }
