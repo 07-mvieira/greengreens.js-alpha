@@ -12,6 +12,10 @@
     width: 658.89px; /*was 111vh*/
 }
 
+/*img{
+    display: none;
+}*/
+
 #canvas{
     background-color: rgb(255, 255, 255);
     display: block;
@@ -21,7 +25,6 @@
     width: 658.89px; /*was 111vh*/
     z-index: 0;
 }
-
 #game-info{
     color: white;
 }

@@ -3,6 +3,8 @@
 # ⭐greengreens.js🌳
 remake do primeiro nível do jogo Kirby's Dream Land em JavaScript
 
+🛑 **IMPORTANTE: suportado apenas por computadores com telas de 1920x1080** 🛑
+
 ### 🧾 sumário
 - [sobre o jogo](#sobre)
 - [tecnologias utilizadas](#tec)
