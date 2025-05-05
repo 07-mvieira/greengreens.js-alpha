@@ -14,7 +14,7 @@ base do código retirada [da demo de Zero Day Arcade](https://github.com/ZeroDay
 - [como executar o projeto](#exe)
 - [funcionalidades](#func)
 - [melhorias futuras](#melhorias)
-- [autores](#autores)
+- [créditos](#creditos)
 
 <a name="sobre"/>
 
@@ -80,7 +80,7 @@ o jogo é controlado exclusivamente pelo teclado.
 - criar todos os sistemas de funcionamento do jogo
 - fazer o download e a edição correta dos assets necessários de Kirby's Dream Land
 
-<a name="autores"/>
+<a name="creditos"/>
 
 ## 👤 créditos
 
