@@ -88,4 +88,4 @@ o jogo é controlado exclusivamente pelo teclado.
 
 [ZeroDayArcade](https://github.com/ZeroDayArcade) - autores do código que formou a base desse jogo
 
-Kirby e Kirby's Dream Land são propriedades de Nintendo e HAL Laboratories; esse projeto não possui nenhuma afiliação com seus donos originais e todos os seus componentes foram utilizados exclusivamente para fins pessoais e de estudo.
+Kirby e Kirby's Dream Land são propriedades de Nintendo e HAL Laboratory; esse projeto não possui nenhuma afiliação com seus donos originais e todos os seus componentes foram utilizados exclusivamente para fins pessoais e de estudo.
