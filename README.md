@@ -3,16 +3,18 @@
 # ⭐greengreens.js🌳
 remake do primeiro nível do jogo Kirby's Dream Land em JavaScript
 
+base do código retirada [da demo de Zero Day Arcade](https://github.com/ZeroDayArcade/HTML5_Platformer)
+
 🛑 **IMPORTANTE: suportado apenas por computadores com telas de 1920x1080** 🛑
 
-### 🧾 sumário
+## 🧾 sumário
 - [sobre o jogo](#sobre)
 - [tecnologias utilizadas](#tec)
 - [como jogar](#controles)
 - [como executar o projeto](#exe)
 - [funcionalidades](#func)
 - [melhorias futuras](#melhorias)
-- [autores](#autores)
+- [créditos](#creditos)
 
 <a name="sobre"/>
 
@@ -78,8 +80,12 @@ o jogo é controlado exclusivamente pelo teclado.
 - criar todos os sistemas de funcionamento do jogo
 - fazer o download e a edição correta dos assets necessários de Kirby's Dream Land
 
-<a name="autores"/>
+<a name="creditos"/>
 
-## 👤 autores
+## 👤 créditos
 
-[07-mvieira](https://www.github.com/07-mvieira/)
+[07-mvieira](https://www.github.com/07-mvieira/) - autora
+
+[ZeroDayArcade](https://github.com/ZeroDayArcade) - autores do código que formou a base desse jogo
+
+Kirby e Kirby's Dream Land são propriedades de Nintendo e HAL Laboratory; esse projeto não possui nenhuma afiliação com seus donos originais e todos os seus componentes foram utilizados exclusivamente para fins pessoais e de estudo.
