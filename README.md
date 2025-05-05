@@ -7,7 +7,7 @@ base do código retirada [da demo de Zero Day Arcade](https://github.com/ZeroDay
 
 🛑 **IMPORTANTE: suportado apenas por computadores com telas de 1920x1080** 🛑
 
-### 🧾 sumário
+## 🧾 sumário
 - [sobre o jogo](#sobre)
 - [tecnologias utilizadas](#tec)
 - [como jogar](#controles)
