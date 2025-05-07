@@ -76,6 +76,8 @@ let gameOver = false;
 let kirby = {
     entityWidth: 64,
     entityHeight: 64,
+    spriteWidth: 96,
+    spriteHeight: 96,
     levelX: 192,
     levelY: 512-256-64, // altura da tela-4 tiles acima da linha inferior-altura (?????)
     renderX: 64,
@@ -132,6 +134,8 @@ let resetGame = function() {
     kirby = {
         entityWidth: 64,
         entityHeight: 64,
+        spriteWidth: 96,
+        spriteHeight: 96,
         levelX: 192,
         levelY: 512-256-64,
         renderX: 64,
