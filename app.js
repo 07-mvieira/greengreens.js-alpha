@@ -23,39 +23,50 @@ const tile = document.getElementById("tile");
 
 const idleRight = document.getElementById("idle-right");
 const idleLeft = document.getElementById("idle-left");
-const walk = document.getElementById("walk");
-const jump = document.getElementById("");
-const tumble = document.getElementById("");
-const hoverLift = document.getElementById("");
-const hover = document.getElementById("");
-const hoverUp = document.getElementById("");
-const hoverSpit = document.getElementById("");
-const crouch = document.getElementById("");
-const inhale = document.getElementById("");
-const fullIdle = document.getElementById("");
-const fullWalk = document.getElementById("");
-const swallow = document.getElementById("");
-const spit = document.getElementById("");
+const walk = document.getElementById("walk-right");
+const jumpRight = document.getElementById("");
+const jumpLeft = document.getElementById("");
+const tumbleRight = document.getElementById("");
+const tumbleLeft = document.getElementById("");
+const hoverLiftRight = document.getElementById("");
+const hoverLiftLeft = document.getElementById("");
+const hoverRight = document.getElementById("");
+const hoverLeft = document.getElementById("");
+const hoverUpRight = document.getElementById("");
+const hoverUpLeft = document.getElementById("");
+const hoverSpitRight = document.getElementById("");
+const hoverSpitLeft = document.getElementById("");
+const crouchRight = document.getElementById("");
+const crouchLeft = document.getElementById("");
+const inhaleRight = document.getElementById("");
+const inhaleLeft = document.getElementById("");
+const fullIdleRight = document.getElementById("");
+const fullIdleLeft = document.getElementById("");
+const fullWalkRight = document.getElementById("");
+const fullWalkLeft = document.getElementById("");
+const swallowRight = document.getElementById("");
+const swallowLeft = document.getElementById("");
+const spitRight = document.getElementById("");
+const spitLeft = document.getElementById("");
 const warpStar = document.getElementById("");
 const die = document.getElementById("");
 
 let kirbyAnimations = [
     [idleRight], [idleLeft],
-    [walk], // right and left
-    [jump], // right and left
-    [tumble], // right and left
-    [hoverLift], // right and left
-    [hover], // right and left
-    [hoverUp], // right and left
-    [hoverSpit], // right and left
-    [crouch], // right and left
-    [inhale], // right and left
-    [fullIdle], // right and left
-    [fullWalk], // right and left
-    [swallow], // right and left
-    [spit], // right and left
-    [warpStar],
-    [die],
+    [walkRight], [walkLeft],
+    [jumpRight], [jumpLeft],
+    [tumbleRight], [tumbleLeft],
+    [hoverLiftRight], [hoverLiftLeft],
+    [hoverRight], [hoverLeft],
+    [hoverUpRight], [hoverUpLeft],
+    [hoverSpitRight], [hoverSpitLeft],
+    [crouchRight], [crouchLeft],
+    [inhaleRight], [inhaleLeft],
+    [fullIdleRight], [fullIdleLeft],
+    [fullWalkRight], [fullWalkLeft],
+    [swallowRight], [swallowLeft],
+    [spitRight], [spitLeft],
+    [warpStar], [die],
 ]
 
 const screenOne = {
