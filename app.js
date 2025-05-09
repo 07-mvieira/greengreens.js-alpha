@@ -2,24 +2,10 @@ const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 let keysDown = {}
 
-
 const titleScreen = {
     vis: document.getElementById("title-screen")
 }
 
-const screenOne = {
-    vis: document.getElementById("screen-1"),
-    tiling: [
-            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
-            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
-            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
-            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
-            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,],
-            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,5,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,],
-            [1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,],
-            [1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,],
-        ],
-}
 const screenTwo = {
     vis: document.getElementById("screen-2"),
 }
@@ -35,23 +21,56 @@ const screenFive = {
 
 const tile = document.getElementById("tile");
 
-/*let kirbyAnimations = [
+const idleRight = document.getElementById("idle-right");
+const idleLeft = document.getElementById("idle-left");
+const walk = document.getElementById("walk");
+const jump = document.getElementById("");
+const tumble = document.getElementById("");
+const hoverLift = document.getElementById("");
+const hover = document.getElementById("");
+const hoverUp = document.getElementById("");
+const hoverSpit = document.getElementById("");
+const crouch = document.getElementById("");
+const inhale = document.getElementById("");
+const fullIdle = document.getElementById("");
+const fullWalk = document.getElementById("");
+const swallow = document.getElementById("");
+const spit = document.getElementById("");
+const warpStar = document.getElementById("");
+const die = document.getElementById("");
+
+let kirbyAnimations = [
     [idleRight], [idleLeft],
-    [walkRight], [walkLeft],
-    [jumpRight], [jumpLeft],
-    [tumbleRight], [tumbleLeft],
-    [hoverLiftRight], [hoverLiftLeft],
-    [hoverRight], [hoverLeft],
-    [hoverUpRight], [hoverUpLeft],
-    [hoverSpitRight], [hoverSpitLeft],
-    [crouchRight], [crouchLeft],
-    [inhaleRight], [inhaleLeft],
-    [fullIdleRight], [fullIdleLeft],
-    [fullWalkRight], [fullWalkLeft],
-    [swallowRight], [swallowLeft],
-    [spitRight], [spitLeft],
-    [warpStar], [die],
-]*/
+    [walk], // right and left
+    [jump], // right and left
+    [tumble], // right and left
+    [hoverLift], // right and left
+    [hover], // right and left
+    [hoverUp], // right and left
+    [hoverSpit], // right and left
+    [crouch], // right and left
+    [inhale], // right and left
+    [fullIdle], // right and left
+    [fullWalk], // right and left
+    [swallow], // right and left
+    [spit], // right and left
+    [warpStar],
+    [die],
+]
+
+const screenOne = {
+    vis: document.getElementById("screen-1"),
+    tiling: [
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,5,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,],
+            [1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,],
+            [1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,],
+        ],
+}
 
 let kirbyAnimationIndex = 4;
 let kirbyFacingLeft = false;
@@ -169,7 +188,7 @@ let gameLoop = function(interval) {
     drawScreenTiles(currentScreen, currentScreen[0].length, currentScreen.length, scrollX);
 }
 
-currentLevel = JSON.parse(JSON.stringify(screenOne.tiling[0]));
+currentScreen = JSON.parse(JSON.stringify(screenOne.tiling[0]));
 
 let FPS = 60;
 let interval = 1 / FPS;
