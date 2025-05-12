@@ -5,6 +5,7 @@ let keysDown = {}
 const titleScreen = {
     vis: document.getElementById("title-screen")
 }
+
 const screenTwo = {
     vis: document.getElementById("screen-2"),
 }
